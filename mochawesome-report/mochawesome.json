@@ -1,0 +1,157 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-10T00:05:58.673Z",
+    "end": "2026-05-10T00:05:58.677Z",
+    "duration": 4,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08ddafdc-9a31-4cd0-8506-c75bc711c82a",
+      "title": "",
+      "fullFile": "C:\\Users\\Reinaldo\\Desktop\\Pós\\03 - Programação para Automação de testes\\Projects\\atividade-programacao-valendo-dois-pontos\\test\\gestaoUsuarios.test.js",
+      "file": "\\test\\gestaoUsuarios.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9718196d-22f1-412c-a9a0-00cd1240291f",
+          "title": "Testes da Gestão de Usuario",
+          "fullFile": "C:\\Users\\Reinaldo\\Desktop\\Pós\\03 - Programação para Automação de testes\\Projects\\atividade-programacao-valendo-dois-pontos\\test\\gestaoUsuarios.test.js",
+          "file": "\\test\\gestaoUsuarios.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validar que um usuario foi logado corretamente",
+              "fullTitle": "Testes da Gestão de Usuario Validar que um usuario foi logado corretamente",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Assert\nconst emaillLogadoCorreto = 'reinaldo@email.com';\nconst senhaLogadoCorreto = '12345678';\n// Act\nconst retornoDaFuncao = fazerLogin(emaillLogadoCorreto, senhaLogadoCorreto);\n// Assert\nassert.equal(retornoDaFuncao, 'Login realizado com sucesso');",
+              "err": {},
+              "uuid": "abed6df3-2faa-498b-a5a4-376ed5f63513",
+              "parentUUID": "9718196d-22f1-412c-a9a0-00cd1240291f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar que um usuario precisa renovar suas credenciais",
+              "fullTitle": "Testes da Gestão de Usuario Validar que um usuario precisa renovar suas credenciais",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Assert\nconst emailExpirado = 'luiz@email.com';\nconst senhaExpirada = '100luiz';\n// Act\nconst retornoDaFuncao = fazerLogin(emailExpirado, senhaExpirada);\n// Assert\nassert.equal(retornoDaFuncao, 'Renove suas credenciais');",
+              "err": {},
+              "uuid": "06fca8d6-7b48-4fa0-8f0b-6f9fb45aa6dc",
+              "parentUUID": "9718196d-22f1-412c-a9a0-00cd1240291f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar usuario não encontrado",
+              "fullTitle": "Testes da Gestão de Usuario Validar usuario não encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Assert\nconst emailInvalido = '123@email.com';\nconst senhaInvalida = '111';\n// Act\nconst retornoDaFuncao = fazerLogin(emailInvalido, senhaInvalida);\n// Assert\nassert.equal(retornoDaFuncao, 'As credenciais estão incorretas');",
+              "err": {},
+              "uuid": "228b58db-b6b0-41af-bcee-41b41abd0d9f",
+              "parentUUID": "9718196d-22f1-412c-a9a0-00cd1240291f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validar senha incorreta para o usuário encontrado",
+              "fullTitle": "Testes da Gestão de Usuario Validar senha incorreta para o usuário encontrado",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Assert\nconst emailValido = 'lucia@email.com';\nconst senhaInvalida = '111';\n// Act\nconst retornoDaFuncao = fazerLogin(emailValido, senhaInvalida);\n// Assert\nassert.equal(retornoDaFuncao, 'As credenciais estão incorretas');",
+              "err": {},
+              "uuid": "d8c1edd0-d98e-4be4-978b-0bf81f121748",
+              "parentUUID": "9718196d-22f1-412c-a9a0-00cd1240291f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "abed6df3-2faa-498b-a5a4-376ed5f63513",
+            "06fca8d6-7b48-4fa0-8f0b-6f9fb45aa6dc",
+            "228b58db-b6b0-41af-bcee-41b41abd0d9f",
+            "d8c1edd0-d98e-4be4-978b-0bf81f121748"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
